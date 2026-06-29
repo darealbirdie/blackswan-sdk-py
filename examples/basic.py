@@ -1,11 +1,13 @@
 from blackswan import BlackSwanClient
 
+# Replace these values with your own
+rpc_url = "https://polygon-amoy.g.alchemy.com/v2/YOUR_API_KEY"
+wallet = "0xYourWalletAddressHere"
+
 client = BlackSwanClient(
     network="amoy",
-    rpc_url="https://polygon-amoy.g.alchemy.com/v2/YOUR_API_KEY"
+    rpc_url=rpc_url
 )
-
-wallet = "0xYourWalletAddressHere"
 
 dashboard = client.get_credit_dashboard(wallet)
 
