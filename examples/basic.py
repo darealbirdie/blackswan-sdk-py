@@ -1,8 +1,11 @@
+import os
+from dotenv import load_dotenv
 from blackswan import BlackSwanClient
 
-# Replace these values with your own
-rpc_url = "https://polygon-amoy.g.alchemy.com/v2/YOUR_API_KEY"
-wallet = "0xYourWalletAddressHere"
+load_dotenv()
+
+rpc_url = os.environ.get("AMOY_RPC_URL", "https://polygon-amoy.g.alchemy.com/v2/YOUR_API_KEY")
+wallet = os.environ.get("WALLET_ADDRESS", "0xYourWalletAddressHere")
 
 client = BlackSwanClient(
     network="amoy",
