@@ -65,3 +65,17 @@ print(f"Trust: {dashboard.trust_ratio} ({dashboard.trust_tier})")
 print(f"APR: {dashboard.current_apr / 10000}%")
 print(f"Loans: {dashboard.successful_loans} successful, {dashboard.defaults} defaults")
 ```
+
+### Sample Output
+
+```
+Credit Dashboard:
+  Trust Ratio: 7700
+  Trust Tier: C
+  Current APR: 0.0142%
+  Borrowed USD: $99
+  Repaid USD: $99
+  Successful Loans: 1
+  Defaults: 0
+  Tier: 0
+```
