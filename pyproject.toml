@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackswan-sdk"
+version = "0.1.0"
+description = "Official Python SDK for BlackSwan Finance"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+authors = [
+    {name = "BlackSwan Finance"}
+]
+
+dependencies = [
+    "web3>=7.0.0",
+]
+
+keywords = [
+    "ethereum",
+    "defi",
+    "credit",
+    "web3",
+    "polygon",
+    "blackswan"
+]
